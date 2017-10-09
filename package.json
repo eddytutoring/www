@@ -1,0 +1,28 @@
+{
+  "name": "www",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "build": "babel ./test -d ./build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eddytutoring/www.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eddytutoring/www/issues"
+  },
+  "homepage": "https://github.com/eddytutoring/www#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "chai": "^4.1.2",
+    "eslint": "^4.8.0",
+    "mocha": "^3.5.3"
+  }
+}
