@@ -14,7 +14,7 @@ module.exports = {
 		path: path.resolve(__dirname, "dist"),
 		filename: '[name].[chunkhash].js',
 		chunkFilename: '[name].[chunkhash].js',
-		publicPath: 'dist',
+		publicPath: '',
 	},
 	devtool: "eval-source-map",
 	devServer: {
@@ -56,7 +56,7 @@ module.exports = {
 		}),
 		new CleanWebpackPlugin(['dist']),
 		new HtmlWebpackPlugin({
-			template: './src/index.html'
+			template: './src/index.html',
 		})
 	],
 	resolve: {
