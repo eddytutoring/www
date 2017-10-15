@@ -1,5 +1,5 @@
 let should = require("chai").should();
-let foo = require("../src/foobar").foo;
+let foo = require("../src/js/foobar").foo;
 
 describe("Function foo", () => {
 	describe("with two number params", () => {
