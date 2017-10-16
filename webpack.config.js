@@ -2,8 +2,8 @@ const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+//const CleanWebpackPlugin = require('clean-webpack-plugin');
+//const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 	entry: {
@@ -12,8 +12,8 @@ module.exports = {
 	},
 	output: {
 		path: path.resolve(__dirname, "dist"),
-		filename: '[name].[chunkhash].js',
-		chunkFilename: '[name].[chunkhash].js',
+		filename: '[name].js',
+		//chunkFilename: '[name].[chunkhash].js',
 		publicPath: '',
 	},
 	devtool: "eval-source-map",
@@ -54,10 +54,10 @@ module.exports = {
 			fileName: 'manifest.json',
 			basePath: './dist/'
 		}),
-		new CleanWebpackPlugin(['dist']),
-		new HtmlWebpackPlugin({
+		//new CleanWebpackPlugin(['dist']),
+		/*new HtmlWebpackPlugin({
 			template: './src/index.html',
-		})
+		})*/
 	],
 	resolve: {
 		/*alias: {
