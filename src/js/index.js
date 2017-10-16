@@ -1,7 +1,7 @@
 import "../scss/base2.scss";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import HelloWorld from './components/helloWorld';
 
-(function () {
-	var app = document.getElementById("app");
-	app.innerText = "유망뚱 바보당 흐잉!!";
-	console.log("abc");
-}());
+const rootElement = document.getElementById('app');
+ReactDOM.render(<HelloWorld />, rootElement);

@@ -29,7 +29,8 @@ module.exports = {
 				loader: 'babel-loader',
 				options: {
 					presets: [
-						['env', { targets: { node: 'current' }, modules: false }]
+						['env',  { "modules": false }],
+						'react',
 					]
 				},
 				exclude: ['/node_modules'],
@@ -48,7 +49,6 @@ module.exports = {
 		new ExtractTextPlugin('styles.css'),
 		new webpack.optimize.CommonsChunkPlugin({
 			name: ['vendor', 'manifest'],
-			fileName: '[name].[chunkhash]'
 		}),
 		new ManifestPlugin({
 			fileName: 'manifest.json',
