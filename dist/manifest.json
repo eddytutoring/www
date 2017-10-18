@@ -1,6 +1,4 @@
 {
-  "./dist/app.css": "./dist/styles.css",
   "./dist/app.js": "./dist/app.js",
-  "./dist/manifest.js": "./dist/manifest.js",
-  "./dist/vendor.js": "./dist/vendor.js"
+  "./dist/manifest.js": "./dist/manifest.js"
 }

@@ -1,9 +1,19 @@
 import React from 'react';
 
 class HelloWord extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			name: '',
+		}
+	}
 	render(){
 		return (
-			<h1>Hello React World</h1>
+			<div>
+				<h1 onClick={()=> {this.setState({name: "eddy"})}} className="base">Hello React World</h1>
+				<div className="base-level">React Test!! {this.state.name}</div>
+				<div>Test!!</div>
+			</div>
 		);
 	}
 }
