@@ -1,7 +1,16 @@
 .base {
+  display: inline-block;
+  border-radius: 10px;
   background: blue;
+  color: white;
 
   &-level {
-    background: blue;
+    max-width: 300px;
+    background: aquamarine;
+  }
+
+  &:active {
+    opacity: 0.5;
+    cursor: pointer;
   }
 }

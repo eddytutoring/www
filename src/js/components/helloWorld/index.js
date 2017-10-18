@@ -4,15 +4,15 @@ class HelloWord extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			name: '',
+			name: 'test',
 		}
 	}
 	render(){
 		return (
 			<div>
-				<h1 onClick={()=> {this.setState({name: "eddy"})}} className="base">Hello React World</h1>
-				<div className="base-level">React Test!! {this.state.name}</div>
-				<div>Test!!</div>
+				<h1 onClick={()=> {this.setState({name: "eddy"})}} className="base">Click Me</h1>
+				<div className="base-level">My name is  {this.state.name}</div>
+				<div>Test!!d</div>
 			</div>
 		);
 	}

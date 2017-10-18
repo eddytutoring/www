@@ -2,10 +2,10 @@ import 'react-hot-loader/patch';
 import "../scss/base.scss";
 import React from 'react';
 import ReactDOM from 'react-dom';
-import HelloWorld from './components/helloWorld';
+import App from './components/App';
 
 const rootElement = document.getElementById('app');
-ReactDOM.render(<HelloWorld />, rootElement);
+ReactDOM.render(<App />, rootElement);
 
 //module hot reutrns true if the config's in development, and in production mode, it will be returned as false
 if(process.env.NODE_ENV !== 'production') {
