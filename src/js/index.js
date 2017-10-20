@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 import App from './components/App';
 
 const rootElement = document.getElementById('app');
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(<App/>, rootElement);
 
 //module hot reutrns true if the config's in development, and in production mode, it will be returned as false
 if(process.env.NODE_ENV !== 'production') {
@@ -13,8 +13,8 @@ if(process.env.NODE_ENV !== 'production') {
 }
 
 if (module.hot) {
-	module.hot.accept("./components/helloWorld", function() {
-		const NextApp = require('./components/helloWorld').default;
+	module.hot.accept("./components/App", function() {
+		const NextApp = require('./components/App').default;
 		ReactDOM.render(<NextApp/>, document.getElementById('app'));
 	});
 }

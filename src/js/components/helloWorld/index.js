@@ -11,7 +11,7 @@ class HelloWord extends React.Component {
 		return (
 			<div>
 				<h1 onClick={()=> {this.setState({name: "eddy"})}} className="base">Click Me</h1>
-				<div className="base-level">My name is  {this.state.name}</div>
+				<div className="base-level">My name is {this.state.name}</div>
 				<div>Test!!d</div>
 			</div>
 		);

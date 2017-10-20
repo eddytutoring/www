@@ -7,7 +7,7 @@ describe("Function foo", () => {
 			let result = foo(3,4);
 
 			result.should.be.a("number");
-			result.should.be.equal(12);
+			result.should.be.equal(10);
 		});
 	});
 });

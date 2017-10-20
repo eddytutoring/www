@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../Header';
 import HelloWorld from '../helloWorld';
+import Contacts from "../Contacts/index";
 
 class App extends React.Component {
 	render() {
@@ -8,6 +9,7 @@ class App extends React.Component {
 			<div>
 				<Header/>
 				<HelloWorld/>
+				<Contacts/>
 			</div>
 		);
 	}
