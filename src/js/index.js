@@ -1,3 +1,5 @@
+// eslint-disable-next-line no-unused-vars
+import React from "react"; // eslint-disable no-unused-vars
 import ReactDOM from "react-dom";
 import "react-hot-loader/patch"; // eslint-disable-line import/no-extraneous-dependencies
 import "../scss/base.scss";
