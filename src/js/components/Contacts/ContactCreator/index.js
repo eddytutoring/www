@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 class ContactCreator extends React.Component {
 	constructor(props) {
@@ -7,18 +7,17 @@ class ContactCreator extends React.Component {
 		this.state = {
 			name: "",
 			phone: "",
-		}
-
+		};
 	}
 
 	handleChange(e) {
-		var nextState = {};
+		const nextState = {};
 		nextState[e.target.name] = e.target.value;
 		this.setState(nextState);
 	}
 
 	handleClick() {
-		var blankInputValues = { name: "", phone: "" };
+		const blankInputValues = { name: "", phone: "" };
 		this.props.onInsert(this.state.name, this.state.phone);
 		this.setState(blankInputValues);
 	}
@@ -29,8 +28,12 @@ class ContactCreator extends React.Component {
 				<div>
 					<span> {this.state.name} </span> <span> {this.state.phone} </span>
 				</div>
-				<input onChange={ this.handleChange.bind(this) } type="text" name="name" placeholder="name" value={ this.state.name }/>
-				<input onChange={ this.handleChange.bind(this) } type="text" name="phone" placeholder="phone" value= { this.state.phone }/>
+				<input onChange={ this.handleChange.bind(this) }
+					type="text" name="name" placeholder="name"
+					value={ this.state.name } />
+				<input onChange={ this.handleChange.bind(this) }
+					type="text" name="phone" placeholder="phone"
+					value= { this.state.phone }/>
 				<button onClick={ this.handleClick.bind(this) }>Insert</button>
 			</div>
 		);

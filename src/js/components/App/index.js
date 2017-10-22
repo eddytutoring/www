@@ -1,9 +1,9 @@
-import React from 'react';
-import Header from '../Header';
-import HelloWorld from '../helloWorld';
-import Contacts from "../Contacts/index";
+import React from "react";
+import Header from "../Header";
+import HelloWorld from "../helloWorld";
+import Contacts from "../Contacts";
 
-class App extends React.Component {
+export default class App extends React.Component {
 	render() {
 		return (
 			<div>
@@ -14,5 +14,3 @@ class App extends React.Component {
 		);
 	}
 }
-
-export default App;

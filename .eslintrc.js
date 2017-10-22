@@ -1,8 +1,19 @@
 module.exports = {
     "env": {
-        "browser": true
+        "browser": true,
+        "es6": true
     },
-    /*"extends": "eslint:recommended",*/
+    "extends": "airbnb-base",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
     "rules": {
         "indent": [
             "error",
@@ -20,13 +31,11 @@ module.exports = {
             "error",
             "always"
         ],
-		"no-console": [
-			"error",
-			{
-				"allow": [
-					"log"
-				]
-			}
+		"indent": [
+			2,
+			"tab"
 		],
+		"no-tabs": 0,
+		"react/jsx-uses-vars": [2]
     },
 };

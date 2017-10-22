@@ -1,20 +1,21 @@
-import 'react-hot-loader/patch';
+import React from "react";
+import ReactDOM from "react-dom";
+import "react-hot-loader/patch"; // eslint-disable-line import/no-extraneous-dependencies
 import "../scss/base.scss";
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './components/App';
+import App from "./components/App";
 
-const rootElement = document.getElementById('app');
+const rootElement = document.getElementById("app");
 ReactDOM.render(<App/>, rootElement);
 
-//module hot reutrns true if the config's in development, and in production mode, it will be returned as false
-if(process.env.NODE_ENV !== 'production') {
+// module hot returns true if the config's in development,
+// and in production mode, it will be returned as false
+if (process.env.NODE_ENV !== "production") {
 	console.log("this is for dev mode");
 }
 
 if (module.hot) {
-	module.hot.accept("./components/App", function() {
-		const NextApp = require('./components/App').default;
-		ReactDOM.render(<NextApp/>, document.getElementById('app'));
+	module.hot.accept("./components/App", () => {
+		const NextApp = require("./components/App").default; // eslint-disable-line global-require
+		ReactDOM.render(<NextApp/>, document.getElementById("app"));
 	});
 }
