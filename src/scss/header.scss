@@ -1,11 +1,14 @@
-$pink : red;
+$bg : blue;
+$items: red;
 
 .header {
   display: flex;
-  background: $pink;
+  background: $bg;
   border-bottom: 2px solid white;
 
+
   &__item {
-    background: $pink;
+    background: $items;
+    list-style-type: none;
   }
 }

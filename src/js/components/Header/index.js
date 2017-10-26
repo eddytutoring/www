@@ -1,14 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../../../scss/header.scss";
 
 export default class Header extends React.Component {
 	render() {
 		return (
-			<div className="header">
-				<div className="header__item">item1</div>
-				<div className="header__item">item2</div>
-				<div className="header__item">item3</div>
-			</div>
+			<ul className="header">
+				<li className="header__item"><Link to="/">Home</Link></li>
+				<li className="header__item"><Link to="/about">app</Link></li>
+			</ul>
 		);
 	}
 }

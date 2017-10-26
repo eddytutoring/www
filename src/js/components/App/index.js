@@ -1,16 +1,21 @@
 import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Home from "../Home";
 import Header from "../Header";
-import HelloWorld from "../helloWorld";
-import Contacts from "../Contacts";
+import About from "../About";
 
-export default class App extends React.Component {
+class App extends React.Component {
 	render() {
 		return (
-			<div>
-				<Header/>
-				<HelloWorld/>
-				<Contacts/>
-			</div>
+			<Router>
+				<div>
+					<Header/>
+					<Route exact path="/" component={Home}></Route>
+					<Route path="/about" component={About}></Route>
+				</div>
+			</Router>
 		);
 	}
 }
+
+export default App;
